@@ -9,6 +9,7 @@
   "author": "Kyle Swaffield",
   "license": "ISC",
   "dependencies": {
-    "minimist": "^1.2.7"
+    "minimist": "^1.2.7",
+    "mongoose": "^6.8.1"
   }
 }
