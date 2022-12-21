@@ -1,0 +1,17 @@
+service: s3Handler
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+  profile: serverlessUser
+
+  stage: dev
+  region: ap-southeast-2
+
+functions:
+  s3EventHandler:
+    handler: lambdas/s3EventHandler.handler
+    events:
+      - sqs: 
+          arn: arn:aws:sqs:ap-southeast-2:572131386763:s3EventsQueue
+          batchSize: 10

@@ -1,0 +1,15 @@
+{
+  "Records": [
+    {
+      "messageId": "38abe889-3a3d-4463-876d-1f51b18e2b88",
+      "receiptHandle": "AQEBvQXuqoIkwz46hYaVVxSjeYkGuMXxVNmHkYSd0Xhw1jeoLc/SkG7v9KYaV8rP/dxHq+wCjAejzALyalYkxUAlWzEAt+YrT0WXnKZ9YoUH4pe4SyFrPtjm2IMvgh7hni4YTl4hfkRNm+7I/RUv0uU194lgcspsZwjOwEIWMCwnnGH1htrVNs1hbwyXY0sQVDUg7Li2AjbZjW0VvGSjrpmrISk50fQ+cnRauDgW4PqU+qaS7Pu1Hi7/PMxhzK9ViZ3KEVuZKXEeA/pOMBk+XGGas4nf/FJyTJC/WfLf/S3DkpuoObgKNkrh+/6XW+g5JGmIKVYvFJjiMDYoJc+MQbL0+lx66cfrKtSA5bSPNgBi4PbIT57cVzm6rt3BSW/ChVGSI6qB9CIuaTSeyBv76sbvyA==",
+      "body": "{\"Records\":[{\"eventVersion\":\"2.1\",\"eventSource\":\"aws:s3\",\"awsRegion\":\"ap-southeast-2\",\"eventTime\":\"2022-12-21T02:43:05.740Z\",\"eventName\":\"ObjectRemoved:Delete\",\"userIdentity\":{\"principalId\":\"AWS:AIDAYKNNQEWFWEVKR44TK\"},\"requestParameters\":{\"sourceIPAddress\":\"149.167.35.134\"},\"responseElements\":{\"x-amz-request-id\":\"6WRVN3CJTK6P4MS7\",\"x-amz-id-2\":\"t6yT+omptF5/9Y2Uc99E4tFpeOCdsukmPS66KUvjuOrNHbipyMNJkD+x1hQ6QEqUcBhF4qvivto1NTv1yRFVbQGCUDdjjPQF\"},\"s3\":{\"s3SchemaVersion\":\"1.0\",\"configurationId\":\"s3EventNotification\",\"bucket\":{\"name\":\"swaff-s3\",\"ownerIdentity\":{\"principalId\":\"A2J7DS0Q4FJS2U\"},\"arn\":\"arn:aws:s3:::swaff-s3\"},\"object\":{\"key\":\"newFolder/cross.jpeg\",\"sequencer\":\"0063A272B9B82A4E77\"}}}]}",
+      "attributes": "[Object]",
+      "messageAttributes": {},
+      "md5OfBody": "db733a9f977552344b6eeddd50e9a158",
+      "eventSource": "aws:sqs",
+      "eventSourceARN": "arn:aws:sqs:ap-southeast-2:572131386763:s3EventsQueue",
+      "awsRegion": "ap-southeast-2"
+    }
+  ]
+}
