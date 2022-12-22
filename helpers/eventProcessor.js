@@ -1,4 +1,4 @@
-const Logger = require('../helpers/logger');
+const Logger = require('./Logger');
 
 module.exports = class EventProcessor{
   constructor(event){

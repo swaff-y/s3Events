@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-const NtflxSchema = new mongoose.Schema(
+const ConfigSchema = new mongoose.Schema(
     {
         category: {
             type: String,
@@ -65,5 +65,5 @@ const NtflxSchema = new mongoose.Schema(
         timestamps: true
     }
 )
-NtflxSchema.index({fullName:"text"});
-module.exports = mongoose.model("Ntflx",NtflxSchema);
+ConfigSchema.index({fullName:"text"});
+module.exports = mongoose.model("Conf", ConfigSchema);
