@@ -12,9 +12,9 @@ module.exports = class Db{
       name: sp[C.nameIdx].split(".")[0],
       fullName: Camel.splitCamelCase(sp[C.nameIdx].split(".")[0]),
       url: data.key,
-      file: sp[C.nameIdx],
+      file: sp[C.fileIdx],
       tag: data.tag,
-      bio: Camel.splitCamelCase(sp[C.nameIdx].split(".")[0])
+      bio: Camel.splitCamelCase(sp[C.fileIdx].split(".")[0])
     });
 
     new Logger('Info', `File created ${await newRec.save()}`);
