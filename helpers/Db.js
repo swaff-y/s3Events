@@ -12,7 +12,7 @@ module.exports = class Db{
       name: sp[C.nameIdx].split(".")[0],
       fullName: Camel.splitCamelCase(sp[C.nameIdx].split(".")[0]),
       url: data.key,
-      file: sp[1],
+      file: sp[C.nameIdx],
       tag: data.tag,
       bio: Camel.splitCamelCase(sp[C.nameIdx].split(".")[0])
     });
