@@ -1,14 +1,20 @@
 const Logger = require('./Logger');
 const Config = require("../models/Config");
+const SplitCamelCase = require("./SplitCamelCase");
+const C = require('../config')
+const Camel = new SplitCamelCase;
 
 module.exports = class Db{
   async create(data, db){
     const sp = data.key.split("/");
     const newRec = new Config({
-      category: sp[0],
+      category: sp[C.categoryIdx],
+      name: sp[C.nameIdx].split(".")[0],
+      fullName: Camel.splitCamelCase(sp[C.nameIdx].split(".")[0]),
       url: data.key,
       file: sp[1],
-      tag: data.tag
+      tag: data.tag,
+      bio: Camel.splitCamelCase(sp[C.nameIdx].split(".")[0])
     });
 
     new Logger('Info', `File created ${await newRec.save()}`);
@@ -32,7 +38,7 @@ module.exports = class Db{
     } else {
       new Logger('Info', `File not removed because it does not exist`);
     }
-    
+
     new Logger('Info', "Closing database");
     return db.close();
   }

@@ -7,10 +7,12 @@ const ConfigSchema = new mongoose.Schema(
             required: true
         },
         name: {
-            type: String
+            type: String,
+            default: null
         },
         fullName: {
-            type: String
+            type: String,
+            default: null
         },
         url: {
             type: String,
